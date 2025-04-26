@@ -1,0 +1,12 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - rustup target add x86_64-unknown-linux-gnu
+  build:
+    commands:
+      - make deploy
+artifacts:
+  files:
+    - function.zip
